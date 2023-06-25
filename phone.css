@@ -1,0 +1,139 @@
+/* Navigation */
+#navbar{
+    width: 100%;
+    flex-direction: column;
+}
+
+#navbar ul li{
+    font-size: 12px;
+   padding: 0px 7px;   
+   padding-bottom: 8px;
+}
+
+
+/* Home Section */
+#home{
+    padding: 3px 68px;
+    height: 288px;
+    
+
+}
+#home p{
+    font-size: 13px
+}
+#home::before{
+    height: 400px;
+    width: 100%;
+    
+
+}
+
+
+/* Service Section */
+#services-container{
+    width: 100%;
+
+}
+#services{
+    /* flex-direction: column;
+    margin: 70px;
+    flex-wrap: wrap; */
+    width: 115%px;
+    /* width: 344px; */
+    height: 203px;
+    /* flex-direction: column; */
+    /* margin: 24px; */
+    flex-wrap: wrap;
+
+}
+#services .box{
+    
+   
+    height: 118%;
+    width: 115%;
+    padding: 0px;
+    margin: -2px 0px;
+    margin-bottom: 15px;
+}
+#services .box img{
+    height: 75px;
+
+}
+
+/* Client  Section */
+#clients{
+    /* width: 397px;   */
+ 
+  display: flex; 
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+#client-section{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid red; */
+    /* position: relative; */
+    /* height: 344px; */
+}
+
+.client-item{
+    /* border: 2px solid black; */
+    /* padding: 8px; */
+     /* width: 177px;
+    height: 121px;  */
+    margin: -19px;
+
+}
+#client-section::before{
+    height: 63%;
+}
+/* #client-section{
+    height: 595px;
+} */
+#clients img{
+width: 70px;
+padding: 6px;
+height: auto;
+}
+
+
+/* Contact us section */
+
+#contact-box form{
+    width: 80%;
+}
+/*  Footer*/
+
+footer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin: 70px; */
+}
+ #footer-1 div{
+   display: flex;
+   justify-content: center;
+   align-items: center  ;
+    width: 194px;
+    /* margin: 10px; */
+    /* text-align: center; */
+    height: 260px;
+}
+#footer-1 div p{
+   
+ text-align: center;
+}
+
+
+/* Utility class */
+
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

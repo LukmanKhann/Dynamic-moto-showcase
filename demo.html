@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .slider {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: fit-content;
+  animation: slide-animation 20s infinite linear;
+}
+
+.slides img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+
+@keyframes slide-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+  /* 40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(0); } */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+          <img src="./bg1.jpg" alt="Slide 1">
+          <img src="./bg2.jpg" alt="Slide 2">
+          <img src="./image/bmwbike.jpg" alt="Slide 3">
+          <img src="./image/scooter.jpg" alt="Slide 4">
+        </div>
+      </div>
+      
+    
+</body>
+</html>

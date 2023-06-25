@@ -1,0 +1,481 @@
+/* Css Reset */
+*{
+    padding: 0%;
+    margin: 0%;
+    /* box-sizing: border-box; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Css Variable */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    position: sticky;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+
+}
+
+/*  navigation bar logo and image */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    margin: 3px 6px;
+    height: 45px;
+    
+}
+
+
+/*  navigation bar list styling */
+#navbar ul{
+    display: flex;
+font-family: 'Poppins', sans-serif;
+
+}
+
+#navbar ul li{
+    
+   list-style-type: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px; 
+    color: white;
+    text-decoration: none;
+    transition: all 0.9s ease-in 0.1s;
+}
+
+#navbar ul li a:hover{
+     
+    
+    font-weight: 400;
+    background-color: rgb(77, 121, 121);
+    /* text-decoration: underline; */
+    color: rgb(255, 253, 253);
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 590px;
+}
+
+#home::before{
+    content: "";
+    background: url('./bg1.jpg') no-repeat center center/cover;
+    /* background: center center;
+    background: no-repeat;
+    background-size: cover; */
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Hubballi', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Hubballi', cursive;
+
+
+}
+/* Services Section */
+#services-container{
+    background: url('./image/bmwbike.jpg') no-repeat center center/cover ;
+    /* height: 698px; */
+    height: 864px;
+    background-color: aqua;
+    /* opacity: 0.9; */
+}
+
+
+#services{
+    margin: 33px;
+    display: flex;
+    /* border: 2px solid red; */
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+#services .box{
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    /* border: 2px solid red; */
+    background-color: rgb(38, 47, 47);
+    opacity: 0.8;
+    margin-bottom: 30px;
+    transition: all 0.4s ease 0.1s;
+    border: 1px solid rgb(69, 90, 102);
+    
+}
+#services .box:hover{
+    box-shadow: 6px 7px 6px 4px rgb(0, 0, 0);
+    /* transform: scale(0.3); */
+   transform: translateX(2px);
+    /* background-color: rgb(77, 121, 121); */
+   
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#service .box p{
+    
+    font-family: 'Hubballi', cursive;
+
+}
+#ourservices{
+    text-shadow: 2px 3px 2px white;
+    color: black;
+}
+#ourclient{
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    color: rgb(152, 122, 122);
+}
+#contactus{
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    color: rgb(152, 122, 122);
+}
+#welcomeworld{
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    color: black;
+
+}
+
+
+#services{}
+#services{}
+
+
+/* Client Section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    height: 284px;
+    
+} 
+.client-item{
+    /* border: 2px solid black; */
+    padding: 34px;
+    width: 126px;
+    height: 116px;
+    margin: 40px;
+}
+
+#client-section{
+    /* border: 2px solid red; */
+    /* position: relative; */
+    /* height: 344px; */
+
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('./bg1.jpg');
+   width: 100%;
+   height: 50%;
+   z-index: -1;
+   opacity: 0.6;
+
+
+}
+#clients img{
+    height: 124px;
+
+}
+/* Contact Section */
+
+#contact{
+position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./contactus.jpg') no-repeat center center/cover ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+  
+   font-size: 1.2rem; 
+   font-family: 'Hubballi', cursive;
+    
+}
+.form-group input{
+    color: rgb(21, 0, 0);
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(85, 102, 102);
+    opacity: 0.6;
+
+}
+.form-group input:hover{
+    background-color: rgb(63, 78, 78);
+
+
+}
+.form-group input::placeholder{
+    color: white;
+
+}
+.form-group label{
+    font-weight: 900;
+
+}
+
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Hubballi', cursive;
+    font-size: 3.1rem;
+    padding: 12px;
+    
+}
+.h-secondary{
+    font-family: 'Hubballi', cursive;
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 1px solid rgb(54, 40, 40);
+    background-color:rgb(113, 113, 112);
+    color: white;
+    margin: 17px ;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+   transition: all 0.5s ease-in 0.1s; 
+   opacity: 0.7; 
+}
+
+.btn:hover{
+    border: 1px dotted orangered;
+    background-color: rgb(77, 121, 121);
+
+
+}
+#submitbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    color: white;
+    text-align: center;
+    font-family: 'Hubballi', cursive;
+}
+span{
+    color: red;
+}
+
+
+/* Model paragraph */
+.modelpara a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+.modelpara a:hover{
+    color: rgb(120, 42, 0);
+    text-decoration: underline;
+
+}
+.modelpara a:visited{
+    /* color: blue; */
+}
+
+/* footer links */
+.footerlinks a{
+    text-decoration: none;
+    color: rgb(7, 72, 129);
+
+}
+.footerlinks a:hover{
+    color: rgb(139, 123, 114);
+    text-decoration: underline;
+
+}
+/* footers */
+footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 300px;
+    background: rgb(18, 13, 13);
+    color: white;
+    padding: 9px 20px;
+}
+#footer-1{
+    height: 100px;
+    /* border: 2px solid snow; */
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    /* border: 2px solid red; */
+
+}
+
+#footer-1 div{
+    /* height: 100px;  */
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+
+#footer-1 div p{
+    font-size: large;
+    text-align: center;  
+    font-family: 'Hubballi', cursive;
+}
+#footer-2{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    height: 300px;
+    /* border: 2px solid white; */
+    width: 50%;
+    text-align: center;
+    font-family: 'Hubballi', cursive;
+    
+}
+#footer-2 div p{
+    margin: 10px;
+    
+    
+}
+
+/* video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 373px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 373px;
+    object-fit: cover;
+  }
+  
+  .video-container #clients {
+    position: relative;
+    z-index: 1;
+    /* Add styling for your content */
+  }
+  
+
+
+/* Image Slider */
+
+/* .slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: fit-content;
+    animation: slide-animation 20s infinite linear;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } */
+    /* 40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); } */
+  /* } */
+  
+
+
+
+
